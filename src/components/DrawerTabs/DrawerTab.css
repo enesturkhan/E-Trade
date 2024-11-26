@@ -1,0 +1,93 @@
+.MuiDrawer-paper {
+  width: 500px;
+  padding: 16px;
+}
+
+.drawerTabsH1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.drawerTabsH1+div {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  font-style: italic;
+}
+
+.basketBox {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+  padding: 16px;
+}
+
+.basketBox1 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.basketBox1 img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.basketBox1 p {
+  flex-grow: 1;
+  margin: 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.basketBox1 button {
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.basketBox1 button:hover {
+  background-color: #e64a19;
+  transform: scale(1.05);
+}
+
+.basketH3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+  text-align: right;
+  margin-top: 20px;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 10px;
+}
+
+@media (max-width: 480px) {
+  .MuiDrawer-paper {
+    width: 100%;
+  }
+
+  .basketBox1 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .basketBox1 img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}

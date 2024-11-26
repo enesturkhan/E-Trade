@@ -1,0 +1,124 @@
+.bigCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 40px auto;
+  gap: 20px;
+}
+
+.leftCard {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.leftCard img {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.leftCard img:hover {
+  transform: scale(1.05);
+}
+
+.rightCard {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.rightCard h2 {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  margin: 0;
+}
+
+.rightCard h3 {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.productDetailsH1 {
+  font-size: 28px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.sectionIcon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sectionIcon .icons {
+  font-size: 24px;
+  cursor: pointer;
+  color: #007bff;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.sectionIcon .icons:hover {
+  color: #0056b3;
+  transform: scale(1.2);
+}
+
+.sectionIcon span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.btn {
+  display: block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .bigCard {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .leftCard {
+    max-width: 100%;
+  }
+
+  .rightCard {
+    gap: 12px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
